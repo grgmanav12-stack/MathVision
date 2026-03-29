@@ -177,10 +177,23 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 * { font-family: 'Inter', sans-serif; }
 
-/* ── Hide Streamlit branding ── */
+/* ── Hide ALL Streamlit branding & buttons ── */
 #MainMenu { visibility: hidden; }
 footer { visibility: hidden; }
-header { visibility: hidden; }
+header { visibility: hidden !important; }
+[data-testid="stToolbar"] { display: none !important; }
+[data-testid="stDecoration"] { display: none !important; }
+[data-testid="stStatusWidget"] { display: none !important; }
+[data-testid="stToolbarActions"] { display: none !important; }
+[data-testid="manage-app-button"] { display: none !important; }
+[data-testid="stHeader"] { display: none !important; }
+[data-testid="stActionButtonIcon"] { display: none !important; }
+.stDeployButton { display: none !important; }
+#stDecoration { display: none !important; }
+.viewerBadge_container__r5tak { display: none !important; }
+.viewerBadge_link__qRIco { display: none !important; }
+.styles_viewerBadge__CvC9N { display: none !important; }
+section[data-testid="stSidebar"] + div > div:first-child { display: none !important; }
 
 .main-title {
     background: linear-gradient(135deg,#1a472a,#2d6a4f,#52b788);
