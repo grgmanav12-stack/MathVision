@@ -176,6 +176,12 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 * { font-family: 'Inter', sans-serif; }
+
+/* ── Hide Streamlit branding ── */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header { visibility: hidden; }
+
 .main-title {
     background: linear-gradient(135deg,#1a472a,#2d6a4f,#52b788);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
